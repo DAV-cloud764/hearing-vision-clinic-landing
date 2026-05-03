@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Vision and Hearing Clinic Center</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0f172a', /* Deep medical navy blue */
+                        secondary: '#f8fafc', /* Soft neutral */
+                        accent: '#64748b', /* Muted green/gray accent */
+                    },
+                    fontFamily: {
+                        heading: ['Playfair Display', 'serif'],
+                        body: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-gray-800 antialiased overflow-x-hidden">
+
+    <!-- Header / Navbar -->
+    <header id="navbar" class="fixed w-full top-0 z-50 transition-all duration-300 bg-white shadow-sm py-4">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-primary rounded-full overflow-hidden flex items-center justify-center">
+                    <img src="assets/VHCC logo.webp" alt="The Vision and Hearing Clinic Center logo" class="w-full h-full object-cover">
+                </div>
+                <span class="font-heading font-bold text-xl text-primary hidden md:block">The Vision and Hearing Clinic Center</span>
+            </div>
+            <nav class="hidden md:flex gap-6 font-medium text-sm">
+                <a href="#home" class="hover:text-primary transition-colors">Home</a>
+                <a href="#about" class="hover:text-primary transition-colors">About</a>
+                <a href="#services" class="hover:text-primary transition-colors">Services</a>
+                <a href="#testimonies" class="hover:text-primary transition-colors">Testimonies</a>
+                <a href="#contact" class="hover:text-primary transition-colors">Contact</a>
+            </nav>
+            <a href="tel:+255620196710" class="bg-primary text-white px-5 py-2 rounded-md font-medium text-sm hover:bg-opacity-90 transition-all shadow-md">Call Us Now</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section pt-32 pb-20 md:pt-40 md:pb-28 text-center">
+        <div class="hero-inner max-w-7xl mx-auto px-6 flex flex-col items-center">
+            <div class="opacity-0 translate-y-4" id="hero-badge">
+                <span class="inline-block bg-accent bg-opacity-10 text-primary px-4 py-1.5 rounded-full text-sm font-medium mb-6 border border-accent border-opacity-20">
+                    🏆 Recognized as one of the best clinics in town
+                </span>
+            </div>
+            <h1 class="text-4xl md:text-6xl font-bold text-primary mb-6 leading-tight max-w-4xl opacity-100" id="hero-title">
+                <span id="typewriter" class="typewriter" role="status" aria-live="polite" aria-label="Typewriter text cycling through clinic mission statements">Your Eyes & Ears Deserve the Best</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl opacity-0 translate-y-4" id="hero-subtext">
+                Providing world-class medical care for your sight and hearing. Experience trusted, professional, and compassionate healthcare with us.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 opacity-0 translate-y-4" id="hero-cta">
+                <a href="#appointment" class="bg-primary text-white px-8 py-3 rounded-md font-medium text-lg hover:bg-opacity-90 active:scale-95 transition-all shadow-lg hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2">Book an Appointment</a>
+                <a href="#services" class="bg-white text-primary border-2 border-primary px-8 py-3 rounded-md font-medium text-lg hover:bg-gray-50 active:scale-95 transition-all focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2">Explore Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4 section-title">About Our Clinic</h2>
+                <p class="text-gray-600 section-desc">
+                    At The Vision and Hearing Clinic Center, our mission is to deliver comprehensive, high-quality eye and ear care. Located in Tabata Baracuda, we combine cutting-edge technology with deep compassionate care to help you experience life with perfect clarity.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="specialists-grid">
+                <!-- Specialist 1 -->
+                <div class="bg-secondary rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <img src="assets/Dr. Sarah Johnson.webp" alt="Dr. Sarah Johnson" class="h-64 w-full object-cover bg-gray-200">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-primary mb-1">Dr. Sarah Johnson</h3>
+                        <p class="text-accent text-sm font-medium mb-3">Lead Ophthalmologist</p>
+                        <p class="text-gray-600 text-sm">Specializes in Cataract Surgery and comprehensive eye management with 15+ years of experience.</p>
+                    </div>
+                </div>
+                <!-- Specialist 2 -->
+                <div class="bg-secondary rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <img src="assets/Dr. Michael Chen.webp" alt="Dr. Michael Chen" class="h-64 w-full object-cover bg-gray-200">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-primary mb-1">Dr. Michael Chen</h3>
+                        <p class="text-accent text-sm font-medium mb-3">ENT Specialist</p>
+                        <p class="text-gray-600 text-sm">Expert in advanced Audiometry and ENT surgical procedures, dedicated to restoring your hearing health.</p>
+                    </div>
+                </div>
+                <!-- Specialist 3 -->
+                <div class="bg-secondary rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <img src="assets/Dr. Amina Patel.webp" alt="Dr. Amina Patel" class="h-64 w-full object-cover bg-gray-200">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-primary mb-1">Dr. Amina Patel</h3>
+                        <p class="text-accent text-sm font-medium mb-3">Optometrist</p>
+                        <p class="text-gray-600 text-sm">Passionate about refractive optical services and diabetic retinopathy screening for all ages.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-secondary">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4 section-title">Our Services</h2>
+                <p class="text-gray-600 section-desc">Comprehensive medical solutions tailored for your specialized needs.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Eye Services -->
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-transparent hover:border-accent hover:shadow-xl hover:-translate-y-2 transition-all duration-300 service-card">
+                    <div class="w-12 h-12 bg-primary rounded-full mb-6 flex items-center justify-center text-white">👁️</div>
+                    <h3 class="text-2xl font-bold text-primary mb-4">Eye Services</h3>
+                    <ul class="space-y-3 text-gray-600 text-sm">
+                        <li class="flex items-start"><span class="mr-2 text-accent">✓</span> Comprehensive Eye Examinations</li>
+                        <li class="flex items-start"><span class="mr-2 text-accent">✓</span> Refraction & Optical Services</li>
+                        <li class="flex items-start"><span class="mr-2 text-accent">✓</span> Cataract Surgery (MSICS/Phaco)</li>
+                        <li class="flex items-start"><span class="mr-2 text-accent">✓</span> Glaucoma Management</li>
+                        <li class="flex items-start"><span class="mr-2 text-accent">✓</span> Diabetic Retinopathy Screening</li>
+                        <li class="flex items-start"><span class="mr-2 text-accent">✓</span> Pterygium Excision</li>
+                        <li class="flex items-start"><span class="mr-2 text-accent">✓</span> Foreign Body Removal</li>
+                        <li class="flex items-start"><span class="mr-2 text-accent">✓</span> Visual Field Testing</li>
+                    </ul>
+                </div>
+                <!-- ENT Services -->
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-transparent hover:border-accent hover:shadow-xl hover:-translate-y-2 transition-all duration-300 service-card">
+                    <div class="w-12 h-12 bg-primary rounded-full mb-6 flex items-center justify-center text-white">👂</div>
+                    <h3 class="text-2xl font-bold text-primary mb-4">Ear & ENT Services</h3>
+                    <ul class="space-y-3 text-gray-600 text-sm">
+                        <li class="flex items-start"><span class="mr-2 text-accent">✓</span> Ear Wax Removal</li>
+                        <li class="flex items-start"><span class="mr-2 text-accent">✓</span> Audiometry</li>
+                        <li class="flex items-start"><span class="mr-2 text-accent">✓</span> Hearing Aid Services</li>
+                        <li class="flex items-start"><span class="mr-2 text-accent">✓</span> Tympanometry</li>
+                        <li class="flex items-start"><span class="mr-2 text-accent">✓</span> Sinusitis & Allergy</li>
+                        <li class="flex items-start"><span class="mr-2 text-accent">✓</span> Nasal Endoscopy</li>
+                        <li class="flex items-start"><span class="mr-2 text-accent">✓</span> Tonsillectomy</li>
+                        <li class="flex items-start"><span class="mr-2 text-accent">✓</span> Foreign Body Removal</li>
+                    </ul>
+                </div>
+                <!-- Administrative -->
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-transparent hover:border-accent hover:shadow-xl hover:-translate-y-2 transition-all duration-300 service-card">
+                    <div class="w-12 h-12 bg-primary rounded-full mb-6 flex items-center justify-center text-white">📋</div>
+                    <h3 class="text-2xl font-bold text-primary mb-4">Administrative Services</h3>
+                    <ul class="space-y-3 text-gray-600 text-sm">
+                        <li class="flex items-start"><span class="mr-2 text-accent">✓</span> Insurance Processing</li>
+                        <li class="flex items-start"><span class="mr-2 text-accent">✓</span> Pharmacy</li>
+                        <li class="flex items-start"><span class="mr-2 text-accent">✓</span> Optical Shop</li>
+                        <li class="flex items-start"><span class="mr-2 text-accent">✓</span> OSHA Health Screening</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Insurance Section -->
+            <div class="mt-20 border-t border-gray-200 pt-16" id="insurance-section">
+                <div class="text-center max-w-3xl mx-auto mb-10">
+                    <h4 class="text-xl md:text-2xl font-bold text-gray-500">Accepted Insurance Providers</h4>
+                    <p class="mt-3 text-sm md:text-base text-gray-500">
+                        We accept multiple insurance plans to help you access the care you need with convenience and confidence.
+                    </p>
+                </div>
+
+                <div class="insurance-carousel" id="insurance-carousel" aria-roledescription="carousel" aria-label="Accepted insurance providers carousel">
+                    <div class="insurance-viewport">
+                        <div class="insurance-track" id="insurance-track"></div>
+                    </div>
+
+                    <div class="insurance-fallback hidden" id="insurance-fallback" aria-hidden="true"></div>
+                </div>
+
+                <noscript>
+                    <div class="insurance-fallback-grid mt-8">
+                        <article class="insurance-card">
+                            <div class="insurance-logo"><img src="assets/National-Health-Insurance-Fund-Tanzania.webp" alt="NHIF logo"></div>
+                            <div class="insurance-name">NHIF</div>
+                        </article>
+                        <article class="insurance-card">
+                            <div class="insurance-logo"><img src="assets/Britam.webp" alt="Britam logo"></div>
+                            <div class="insurance-name">Britam</div>
+                        </article>
+                        <article class="insurance-card">
+                            <div class="insurance-logo"><img src="assets/Jubilee.webp" alt="Jubilee logo"></div>
+                            <div class="insurance-name">Jubilee</div>
+                        </article>
+                        <article class="insurance-card">
+                            <div class="insurance-logo"><img src="assets/Assemble.webp" alt="Assemble logo"></div>
+                            <div class="insurance-name">Assemble</div>
+                        </article>
+                        <article class="insurance-card">
+                            <div class="insurance-logo"><img src="assets/Strategis.webp" alt="Strategis logo"></div>
+                            <div class="insurance-name">Strategis</div>
+                        </article>
+                    </div>
+                </noscript>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonies Section -->
+    <section id="testimonies" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4 section-title">Patient Testimonies</h2>
+            </div>
+            
+            <div class="relative max-w-4xl mx-auto overflow-hidden bg-secondary rounded-xl p-10 shadow-sm" id="carousel">
+                <div class="flex transition-transform duration-500 ease-in-out" id="carousel-track">
+                    <!-- Slide 1 -->
+                    <div class="min-w-full px-4 text-center">
+                        <p class="text-lg md:text-xl text-gray-600 italic mb-6">"The cataract surgery changed my life. The doctors at VHCC were incredibly reassuring and professional. I can see colors I had forgotten existed."</p>
+                        <h4 class="font-bold text-primary">— James M.</h4>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="min-w-full px-4 text-center">
+                        <p class="text-lg md:text-xl text-gray-600 italic mb-6">"After years of struggling with hearing loss, the audiometry testing and hearing aid fitting here finally brought sound back to my world. Exceptional service!"</p>
+                        <h4 class="font-bold text-primary">— Fatuma S.</h4>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="min-w-full px-4 text-center">
+                        <p class="text-lg md:text-xl text-gray-600 italic mb-6">"I bring all my children here for their eye checkups. The environment is so welcoming, and the staff handles insurance processing flawlessly."</p>
+                        <h4 class="font-bold text-primary">— Grace K.</h4>
+                    </div>
+                </div>
+                <div class="flex justify-center mt-8 gap-2">
+                    <button class="w-3 h-3 rounded-full bg-primary opacity-50 carousel-dot hover:opacity-100 transition-opacity" data-index="0"></button>
+                    <button class="w-3 h-3 rounded-full bg-primary opacity-50 carousel-dot hover:opacity-100 transition-opacity" data-index="1"></button>
+                    <button class="w-3 h-3 rounded-full bg-primary opacity-50 carousel-dot hover:opacity-100 transition-opacity" data-index="2"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment & Contact Section -->
+    <section id="contact" class="py-20 bg-primary text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+                
+                <!-- Book Appointment Form -->
+                <div id="appointment" class="bg-white text-gray-800 p-8 rounded-xl shadow-lg form-container">
+                    <h3 class="text-2xl font-bold text-primary mb-6">Book an Appointment</h3>
+                    <form id="appointment-form" class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium mb-1">Full Name</label>
+                            <input type="text" required class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-1">Email Address</label>
+                            <input type="email" required class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-1">Phone Number</label>
+                            <input type="tel" required class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-1">Service Selection</label>
+                            <select required class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent bg-white">
+                                <option value="" disabled selected>Select a service</option>
+                                <option value="eye">Eye Services</option>
+                                <option value="ent">ENT Services</option>
+                                <option value="admin">Administrative Services</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="w-full bg-primary text-white py-3 rounded-md font-medium hover:bg-opacity-90 transition-all mt-4">Book Appointment</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info & Map -->
+                <div class="flex flex-col justify-center contact-info">
+                    <h3 class="text-3xl font-bold mb-6 font-heading">Our Customer Care</h3>
+                    <div class="space-y-4 mb-8">
+                        <p class="flex items-center text-gray-300"><span class="mr-4 text-xl">📍</span> Tabata Baracuda, Dar es Salaam</p>
+                        <p class="flex items-center text-gray-300"><span class="mr-4 text-xl">📞</span> <a href="tel:+255620196710" class="hover:text-white transition-colors">+255 620 196 710</a></p>
+                        <p class="flex items-center text-gray-300"><span class="mr-4 text-xl">✉️</span> <a href="mailto:vision&hearingclinic@info.com" class="hover:text-white transition-colors">vision&hearingclinic@info.com</a></p>
+                        <p class="flex items-center text-gray-300"><span class="mr-4 text-xl">🌐</span> <a href="http://vision&hearingclinic.co.tz" target="_blank" class="hover:text-white transition-colors">vision&hearingclinic.co.tz</a></p>
+                    </div>
+                    
+                    <!-- Embedded Map -->
+                    <div class="w-full h-48 rounded-lg overflow-hidden relative bg-gray-200 shadow-inner">
+                        <iframe
+                            title="The Vision and Hearing Clinic Center location map"
+                            src="https://www.google.com/maps?q=Tabata%20Baracuda%2C%20Dar%20es%20Salaam%2C%20Tanzania&output=embed"
+                            class="absolute inset-0 w-full h-full border-0"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12 text-sm border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <div>
+                <h4 class="text-white text-lg font-bold font-heading mb-4">VHCC</h4>
+                <p class="mb-4">The Vision and Hearing Clinic Center providing premier medical care with excellence and compassion.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">Quick Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="#about" class="hover:text-white transition-colors">About</a></li>
+                    <li><a href="#services" class="hover:text-white transition-colors">Services</a></li>
+                    <li><a href="#testimonies" class="hover:text-white transition-colors">Testimonies</a></li>
+                    <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">Services Highlight</h4>
+                <ul class="space-y-2">
+                    <li>Eye Services</li>
+                    <li>ENT Services</li>
+                    <li>Administrative Services</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">Follow Us</h4>
+                <div class="flex gap-4">
+                    <a href="#" class="hover:text-white transition-colors">IG</a>
+                    <a href="#" class="hover:text-white transition-colors">X</a>
+                    <a href="#" class="hover:text-white transition-colors">TikTok</a>
+                    <a href="#" class="hover:text-white transition-colors">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 text-center border-t border-gray-800 pt-8">
+            <p>Website designed by <a href="www.mluetechnology.me" class="text-white font-medium hover:underline">MLUE TECHNOLOGY</a></p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/255620196710" target="_blank" class="fixed bottom-6 right-6 w-14 h-14 bg-green-500 rounded-full flex items-center justify-center text-white text-3xl shadow-lg hover:bg-green-600 transition-colors z-50 group">
+        <span class="absolute inset-0 rounded-full ring-4 ring-green-500 ring-opacity-50 animate-ping"></span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 z-10" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.347-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.876 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+    </a>
+
+    <!-- Motion & Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/motion@11.11.11/dist/motion.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
