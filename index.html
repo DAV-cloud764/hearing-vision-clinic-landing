@@ -161,7 +161,7 @@
 
     <!-- Header / Navbar -->
     <header id="navbar" class="fixed w-full top-0 z-50 transition-all duration-300 bg-white shadow-sm py-4">
-        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center gap-4">
             <div class="flex items-center gap-3">
                 <div class="w-10 h-10 bg-primary rounded-full overflow-hidden flex items-center justify-center">
                     <img src="assets/VHCC logo.webp" alt="The Vision and Hearing Clinic Center logo" class="w-full h-full object-cover">
@@ -175,7 +175,33 @@
                 <a href="#testimonies" class="hover:text-primary transition-colors">Testimonies</a>
                 <a href="#contact" class="hover:text-primary transition-colors">Contact</a>
             </nav>
-            <a href="tel:+255620196710" class="bg-primary text-white px-5 py-2 rounded-xl font-medium text-sm hover:bg-opacity-90 transition-all shadow-md">Call Us Now</a>
+            <div class="flex items-center gap-2">
+                <a href="tel:+255620196710" class="bg-primary text-white px-5 py-2 rounded-xl font-medium text-sm hover:bg-opacity-90 transition-all shadow-md">Call Us Now</a>
+                <button
+                    id="mobile-menu-button"
+                    type="button"
+                    class="mobile-menu-button md:hidden"
+                    aria-controls="mobile-menu"
+                    aria-expanded="false"
+                    aria-label="Open navigation menu">
+                    <span class="sr-only">Toggle navigation menu</span>
+                    <span class="hamburger-lines" aria-hidden="true">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="mobile-menu-panel md:hidden" data-open="false" aria-hidden="true">
+            <nav class="mobile-menu-nav max-w-7xl mx-auto px-6 py-4" aria-label="Mobile navigation">
+                <a href="#home" class="mobile-menu-link">Home</a>
+                <a href="#about" class="mobile-menu-link">About</a>
+                <a href="#services" class="mobile-menu-link">Services</a>
+                <a href="#testimonies" class="mobile-menu-link">Testimonies</a>
+                <a href="#contact" class="mobile-menu-link">Contact</a>
+                <a href="#appointment" class="mobile-menu-cta">Book an Appointment</a>
+            </nav>
         </div>
     </header>
 

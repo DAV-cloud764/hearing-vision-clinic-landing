@@ -126,6 +126,45 @@
             initializePage();
         }
 
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuLinks = mobileMenu ? mobileMenu.querySelectorAll('a') : [];
+
+        function setMobileMenuOpen(isOpen) {
+            if (!mobileMenuButton || !mobileMenu) return;
+
+            mobileMenuButton.setAttribute('aria-expanded', String(isOpen));
+            mobileMenuButton.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+            mobileMenu.dataset.open = String(isOpen);
+            mobileMenu.setAttribute('aria-hidden', String(!isOpen));
+            document.body.classList.toggle('nav-menu-open', isOpen);
+        }
+
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => {
+                const isOpen = mobileMenu.dataset.open === 'true';
+                setMobileMenuOpen(!isOpen);
+            });
+
+            mobileMenuLinks.forEach((link) => {
+                link.addEventListener('click', () => {
+                    setMobileMenuOpen(false);
+                });
+            });
+
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape') {
+                    setMobileMenuOpen(false);
+                }
+            });
+
+            window.addEventListener('resize', () => {
+                if (window.innerWidth >= 768) {
+                    setMobileMenuOpen(false);
+                }
+            });
+        }
+
         window.setupInsuranceCarousel = setupInsuranceCarousel;
 
         // Testimonial Carousel
