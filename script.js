@@ -1,5 +1,5 @@
         // Typewriter Effect
-        const phrases = ["Your Eyes & Ears Deserve the Best", "Expert Care for a Clearer Life", "Trusted By The Community"];
+        const phrases = ["Eye & Ear Clinic in Tabata, Dar es Salaam", "Comprehensive Ophthalmology and ENT Care", "Insurance-Friendly Vision and Hearing Services"];
         let currentPhraseIndex = 0;
         let charIndex = 0;
         let isDeleting = false;
