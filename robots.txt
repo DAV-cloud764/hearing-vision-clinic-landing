@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://hearing-visionclinic.vercel.app/sitemap.xml
